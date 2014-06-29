@@ -20,12 +20,14 @@
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
+\definecolor{maroon}{HTML}{800000}
 
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{maroonsblue}{HTML}{0971B2}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -37,7 +39,7 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{gray}
+  \colorlet{fillheader}{maroonsblue}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
@@ -98,15 +100,21 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\or%
-        brown\or%
-        blue\or%
-        red\or%
-        orange\else%
+%       blue\or%
+%       red\or%
+%       orange\or%
+%       green\or%
+%       purple\or%
+%       brown\or%
+%       blue\or%
+%       red\or%
+        maroon\or%
+        maroon\or%
+        maroon\or%
+        maroon\or%
+        maroon\or%
+        maroon\or%
+        maroon\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -328,4 +336,4 @@
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
-\RequirePackage[colorlinks]{hyperref}
+\RequirePackage[colorlinks, urlcolor=maroonsblue]{hyperref}
