@@ -19,7 +19,7 @@
 
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{999999}
+\definecolor{lightgray}{HTML}{4D4D4D}
 \definecolor{maroon}{HTML}{800000}
 
 \definecolor{green}{HTML}{C2E15F}
@@ -28,7 +28,6 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{maroonsblue}{HTML}{07578A}
-
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
@@ -204,7 +203,7 @@
 % Bibliography %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[style=verbose, maxnames=99, sorting=ydnt, backend=biber]{biblatex}
+\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
 
 \DeclareFieldFormat[article]{title}{#1\par}
 \DeclareFieldFormat[book]{title}{#1\par}
@@ -213,7 +212,7 @@
 \DeclareFieldFormat[report]{title}{#1\par}
 
 \DeclareBibliographyDriver{article}{%
-  \printfield{title}%
+  \textbf{\printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -233,7 +232,7 @@
 }
 
 \DeclareBibliographyDriver{book}{%
-  \printfield{title}%
+  \textbf{\printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -254,7 +253,7 @@
 
 
 \DeclareBibliographyDriver{inproceedings}{%
-  \printfield{title}%
+  \textbf{\printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -272,7 +271,7 @@
 }
 
 \DeclareBibliographyDriver{misc}{%
-  \printfield{title}%
+  \textbf{\printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
