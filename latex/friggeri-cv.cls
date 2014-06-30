@@ -155,7 +155,7 @@
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{2\parsep}%
+    #4\vspace{3\parsep}%
   }\\}
 
   %%%%%%%%%%%%%%%%%%%%
@@ -336,4 +336,4 @@
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
-\RequirePackage[colorlinks, urlcolor=maroonsblue]{hyperref}
+\RequirePackage[colorlinks, urlcolor=maroonsblue, linkcolor=maroonsblue]{hyperref}

@@ -22,8 +22,10 @@
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \usepackage{multicol}
 \usepackage[none]{hyphenat}
+\addbibresource{ezietsman-ref.bib} % Specify the bibliography file to include publications
 
- 
+\newcommand{\mnras}{MNRAS} 
+\newcommand{\apj}{Astrophysical Journal} 
 \begin{document}
 
 \header{ewald}{zietsman}{software developer} % Your name and current job title/field
@@ -39,7 +41,7 @@ Observatory
 Cape Town
 South Africa
 ~
-082 735 4048
+072 735 4048
 021 448 2040
 ~
 \href{mailto:ewald.zietsman@gmail.com}{ewald.zietsman@gmail.com}
@@ -58,18 +60,93 @@ ID: 8202085009086
 %cython
 %fortran
 \end{aside}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{experience}
+\begin{entrylist}
+\entry
+{2011 -- }
+{\href{http://www.siyavula.com}{Siyavula Education}}
+{Cape Town}
+{%
+\textbf{Technical Coordinator / Software Developer}
+
+\textbf{\textit{Responsibilities:}}
+\begin{itemize}
+\setlength{\itemsep}{5pt}
+\item Development and maintenance of Python software for XML document validation and conversion to publishing formats (HTML5, \LaTeX, EPub 3.0, Mobile Web)
+\item Implementation and maintenance of \LaTeX~style sheets for print book PDF generation. See PDF downloads on:
+    \subitem \url{http://www.thunderboltkids.co.za}
+    \subitem \url{http://www.curious.org.za/}
+    \subitem \url{http://www.everythingscience.co.za}
+    \subitem \url{http://www.everythingmaths.co.za}
+
+\item Management of technical aspects of textbook translations
+    \subitem Maintenance of \emph{Transifex} server
+    \subitem XML conversion to and from translation formats
+
+\item Developing proof of concept models and testing of new tools and technologies for possible inclusion in current processes.
+
+\item Development of custom modules in the Plone CMS related to online hosting of textbooks
+
+\item Contributing to related open source software development projects including:
+    \subitem OERPub Editor:~\url{http://oerpub.github.io/Aloha-Editor}
+    \subitem AnnotatorJS:~\url{http://annotatorjs.org}
+\end{itemize}
+}
+\end{entrylist}
+\begin{entrylist}
+%
+\entry
+{2008}
+{\href{http://www.uct.ac.za}{University of Cape Town}}
+{School of Geomatics}
+{%
+\textbf{Lecturer}
+\begin{itemize}
+\setlength{\itemsep}{5pt}
+    \item Lectured spherical trigonometry and map projections as part of Geographical Informations Systems I (2nd year course)
+    \item Lectured part of the Basic Surveying I course (2nd year course)
+\end{itemize}
+}
+\end{entrylist}
+\begin{entrylist}
+%
+\entry
+{2006 -- 2010}
+{\href{http://www.uct.ac.za}{University of Cape Town}}
+{Department of Astronomy}
+{%
+\textbf{Course Tutor}
+
+Astronomy I, Astronomy II, Spectroscopy NASSP Honours Course
+}
+\end{entrylist}
+\begin{entrylist}
+%
+\entry
+{2001 -- 2004}
+{\textcolor{maroonsblue}{James Mahon Landmeters}}
+{Pretoria}
+{%
+\textbf{Student Surveyor}
+
+Assisted in various types of survey projects. These included precise engineering surveys, sectional title surveys, boundary disputes, setting out of townships and parcels, topographical surveys. Also assisted in other cadastral type work such as subdivisions of farms and parcels, servitude surveys and beacon relocation surveys. The work included calculation of ﬁeldwork and the checking of diagrams for accuracy. 
+}
+\end{entrylist}
+\pagebreak
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{education}
-
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {2009 -- 2011 \\(Incomplete)}
-{\textbf PhD Astrophysics and Space Science}
+{\textbf PhD in Astrophysics and Space Science}
 {University of South Africa}
 {{\textbf{Thesis:} A Study of Selected Magnetic Cataclysmic Variables}
 
@@ -83,6 +160,8 @@ ID: 8202085009086
         \item Development of custom analysis and visualisation software using Python and related tools.
 \end{itemize}}
 }
+\end{entrylist}
+\begin{entrylist}
 %------------------------------------------------
 %------------------------------------------------
 \entry
@@ -93,6 +172,8 @@ ID: 8202085009086
 Cosmology, Cataclysmic Variables}
 
 {\textbf{Dissertation:} High-speed Photometry and Spectroscopy of the Cataclysmic Variable EC2117-54 : Exploring New Avenues With the Southern African Large Telescope }}
+\end{entrylist}
+\begin{entrylist}
 %------------------------------------------------
 \entry
 {2005}
@@ -111,49 +192,6 @@ Photogrammetry}}
 %------------------------------------------------
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{experience}
-\begin{entrylist}
-\entry
-{2011 -- }
-{\href{http://www.siyavula.com}{Siyavula Education}}
-{Cape Town}
-{%
-\textbf{Technical Coordinator / Software Developer}
-
-\textbf{\textit{Responsibilities:}}
-\begin{itemize}
-\item Development and maintenance of Python software for XML document validation and conversion to publishing formats (HTML5, \LaTeX, EPub 3.0, Mobile Web)
-\item Implementation and maintenance of \LaTeX~style sheets for print book PDF generation. See PDF downloads on:
-    \subitem \url{http://www.thunderboltkids.co.za}
-    \subitem \url{http://www.everythingscience.co.za}
-    \subitem \url{http://www.everythingmaths.co.za}
-
-\item Management of technical aspects of textbook translations
-    \subitem Maintenance of \emph{Transifex} server
-    \subitem XML conversion to and from translation formats
-
-\item Developing proof of concept models and testing of new tools and technologies for possible inclusion in currently used processes.
-\end{itemize}
-}
-\end{entrylist}
-\begin{entrylist}
-%
-\entry
-{2008}
-{\href{http://www.uct.ac.za}{University of Cape Town}}
-{School of Geomatics}
-{%
-\textbf{Lecturer}
-\begin{itemize}
-    \item Lectured spherical trigonometry as part of Geographical Informations Systems I (2nd year course)
-    \item Lectured part of the Basic Surveying I course (2nd year course)
-\end{itemize}
-}
-\end{entrylist}
 %----------------------------------------------------------------------------------------
 %	SKILLS EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
@@ -178,6 +216,31 @@ Photogrammetry}}
 
 \begin{entrylist}
 \end{entrylist}
+
+
+\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+
+
+
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
