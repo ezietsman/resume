@@ -141,6 +141,13 @@ Assisted with various types of survey projects including precise engineering sur
 \end{entrylist}
 \pagebreak
 \newgeometry{left=2.5cm, right=2.5cm}
+\renewcommand{\entry}[4]{%
+  #1&\parbox[t]{13.5cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{3\parsep}%
+  }\\}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
