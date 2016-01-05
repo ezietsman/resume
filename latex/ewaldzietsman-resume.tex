@@ -50,9 +50,8 @@ South Africa
 english 
 afrikaans
 \section{personal info}
-age: 32
+age: 33
 nationality: South African
-ID: 8202085009086
 %\section{programming languages}
 %python
 %javascript
@@ -66,7 +65,22 @@ ID: 8202085009086
 \section{experience}
 \begin{entrylist}
 \entry
-{2011 -- }
+{2014 -- }
+{\href{http://www.siyavula.com}{Siyavula Education}}
+{Cape Town}
+{%
+\textbf{Senior Software Developer}
+\begin{itemize}
+\setlength{\itemsep}{5pt}
+\item Design, implementation and maintenance of a complex suite of web-based, machine-learning driven, educational software.
+    \subitem \url{http://www.everythingmaths.co.za}
+    \item Code review of other developers' code.
+    \item Maintainence of the codebase.
+    \item Mentoring of junior developers.
+\end{itemize}
+}
+\entry
+{2011 -- 2014 }
 {\href{http://www.siyavula.com}{Siyavula Education}}
 {Cape Town}
 {%
@@ -126,9 +140,17 @@ ID: 8202085009086
 
 Astronomy I, Astronomy II, Spectroscopy NASSP Honours Course.
 }
-\end{entrylist}
-\begin{entrylist}
 %
+\end{entrylist}
+\newgeometry{left=2.5cm, right=2.5cm}
+\renewcommand{\entry}[4]{%
+  #1&\parbox[t]{13.5cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{3\parsep}%
+  }\\}
+\begin{entrylist}
 \entry
 {2001 -- 2004}
 {\textcolor{maroonsblue}{James Mahon Landmeters}}
@@ -139,20 +161,11 @@ Astronomy I, Astronomy II, Spectroscopy NASSP Honours Course.
 Assisted with various types of survey projects including precise engineering surveys, sectional title surveys, boundary disputes, setting out of townships and parcels, topographical surveys. Also assisted with other cadastral type work such as subdivisions of farms and parcels, servitude surveys and beacon relocation surveys. 
 }
 \end{entrylist}
-\pagebreak
-\newgeometry{left=2.5cm, right=2.5cm}
-\renewcommand{\entry}[4]{%
-  #1&\parbox[t]{13.5cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{3\parsep}%
-  }\\}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
 \section{education}
 \begin{entrylist}
 %------------------------------------------------
@@ -211,9 +224,9 @@ Mathematics, Physics, Astronomy, Numerical Methods, Land Law, Engineering Survey
 
 \textbf{Programming languages:} Python, Javascript, Fortran, C/C++, \LaTeX.
 
-\textbf{Operating systems:} Linux (Ubuntu, Fedora Core, Mandriva), Microsoft Windows.
+\textbf{Operating systems:} Linux (Ubuntu, Fedora Core, Mandriva), OSX.
 
-\textbf{Applications:} Git, Pyramid, Plone, Django, scipy, matplotlib, pyfits, numpy, vpython, cython, swig, f2py, pygame, parallelpython, Subversion, Mercurial, IRAF, \LaTeX.
+\textbf{Applications:} Git, Github, Pyramid, Plone, Django, scipy, matplotlib, pyfits, numpy, vpython, cython, swig, f2py, pygame, parallelpython, Subversion, Mercurial, IRAF, \LaTeX, Trello, Code Climate.
 
 \textbf{Surveying instruments:} Digital and Opto-mechanical Theodolites, Static and Real Time Kinematic GPS
     systems, Precise Levels, Dumpy Levels.
@@ -224,9 +237,6 @@ Mathematics, Physics, Astronomy, Numerical Methods, Land Law, Engineering Survey
 \textbf{Miscellaneous:} exceptional analytical and problem solving skills, technical software programming and design capabilities, object-oriented programming, strong verbal and written communication skills.
 
 
-
-\begin{entrylist}
-\end{entrylist}
 \section{publications}
 \printbibsection{article}{articles} % Print all articles from the bibliography
 \printbibsection{inproceedings}{conference proceedings} % Print all articles from the bibliography
