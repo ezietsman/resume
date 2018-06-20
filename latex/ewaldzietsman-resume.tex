@@ -28,60 +28,81 @@
 \newcommand{\apj}{Astrophysical Journal}
 \begin{document}
 
-\header{ewald}{zietsman}{software engineer} % Your name and current job title/field
+\header{ewald}{zietsman}{Data Scientist} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
-{\small
-\begin{aside} % In the aside, each new line forces a line break
-
-\section{contact}
-Observatory
-Cape Town
-South Africa
-~
-~
-\textbf{email}:
-\href{mailto:ewald.zietsman@gmail.com}{ewald.zietsman@gmail.com}
-~
-\textbf{website}:
-\href{http://ezietsman.github.io/}{ezietsman.github.io}
-\section{languages}
-english
-afrikaans
-\section{personal info}
-age: 34
-nationality: South African
-%\section{programming languages}
-%python
-%javascript
-%\LaTeX
-%cython
-%fortran
-\end{aside}
-}
+% {\small
+% \begin{aside} % In the aside, each new line forces a line break
+% \section{contact}
+% Observatory
+% Cape Town
+% South Africa
+% ~
+% ~
+% \textbf{email}:
+% \href{mailto:ewald.zietsman@gmail.com}{ewald.zietsman@gmail.com}
+% ~
+% \section{languages}
+% english
+% afrikaans
+% \section{personal info}
+% age: 36
+% nationality: South African
+% %\section{programming languages}
+% %python
+% %javascript
+% %\LaTeX
+% %cython
+% %fortran
+% \end{aside}
+% }
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
+%\newgeometry{left=2.5cm, right=2.5cm}
+\renewcommand{\entry}[4]{%
+  #1&\parbox[t]{13.5cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{3\parsep}%
+  }\\}
 \section{experience}
 \begin{entrylist}
+  \entry
+  {January 2017 -- }
+  {\href{http://www.24.com}{24.com}}
+  {Cape Town}
+  {%
+  \textbf{Data Scientist}
+  \begin{itemize}
+  \setlength{\itemsep}{5pt}
+  \item Design and implementation of recommender systems for News24 Edge and other 24.com products.
+  \item Analysis of algorithms and implementations to optimise performance and cost tradeoffs.
+  \item Performing A/B tests to find optimal parameters.
+  \item Applying machine learning to business problems.
+  \item Data wrangling and analysis and provision of business reports.
 
-    \entry
-    {April 2016 -- }
-    {\href{http://www.hozi.co.za}{Hozi}}
-    {Cape Town}
-    {%
-    \textbf{Senior Engineer}
-    \begin{itemize}
-    \setlength{\itemsep}{5pt}
-    \item Design, implementation and maintenance of Hozi's content aggregation and publishing platforms.
-    \item Code review of other developers' code.
-    \item Maintenance of the codebase.
-    \item Mentoring of junior developers.
-    \end{itemize}
-    }
+  \end{itemize}
+  }
+
+  \entry
+  {Apr 2016 -- \\Nov 2016}
+  {\href{http://www.hozi.co.za}{Hozi}}
+  {Cape Town}
+  {%
+  \textbf{Senior Engineer}
+  \begin{itemize}
+  \setlength{\itemsep}{5pt}
+  \item Design, implementation and maintenance of Hozi's content aggregation and publishing platforms.
+  \item Code review of other developers' code.
+  \item Maintenance of the codebase.
+  \item Mentoring of junior developers.
+  \end{itemize}
+}
 
 \entry
 {2014 -- 2016}
@@ -92,12 +113,13 @@ nationality: South African
 \begin{itemize}
 \setlength{\itemsep}{5pt}
 \item Design, implementation and maintenance of a complex suite of web-based, machine-learning driven, educational software.
-    \subitem \url{http://www.everythingmaths.co.za}
-    \item Code review of other developers' code.
-    \item Maintenance of the codebase.
-    \item Mentoring of junior developers.
+\subitem \url{http://www.everythingmaths.co.za}
+\item Code review of other developers' code.
+\item Maintenance of the codebase.
+\item Mentoring of junior developers.
 \end{itemize}
 }
+
 \entry
 {2011 -- 2014 }
 {\href{http://www.siyavula.com}{Siyavula Education}}
@@ -107,42 +129,34 @@ nationality: South African
 \begin{itemize}
 \setlength{\itemsep}{5pt}
 \item Development and maintenance of Python software for XML document validation and conversion to publishing formats including HTML5, \LaTeX, EPub 3.0 and Mobile Web.
-\item Implementation and maintenance of \LaTeX~style sheets for print book PDF generation. See PDF downloads at:
-    \subitem \url{http://www.thunderboltkids.co.za}
-    \subitem \url{http://www.curious.org.za}
-    \subitem \url{http://www.everythingscience.co.za}
-    \subitem \url{http://www.everythingmaths.co.za}
+\item Implementation and maintenance of \LaTeX~style sheets for print book PDF generation. %See PDF downloads at:
+% \subitem \url{http://www.thunderboltkids.co.za}
+    % \subitem \url{http://www.curious.org.za}
+    % \subitem \url{http://www.everythingscience.co.za}
+    % \subitem \url{http://www.everythingmaths.co.za}
 
 \item Management of technical aspects of textbook translations including:
-\begin{itemize}
-    \renewcommand{\labelitemii}{$\cdot$}
+% \begin{itemize}
+    % \renewcommand{\labelitemii}{$\cdot$}
     \item Maintenance of \emph{Transifex} server.
     \item XML conversion to and from translation formats.
-\end{itemize}
+% \end{itemize}
 
 \item Developing proof of concept models and testing of new tools and technologies for possible inclusion in current processes.
 
-\item Development of custom modules in the Plone CMS related to online hosting of textbooks.
+% \item Development of custom modules in the Plone CMS related to online hosting of textbooks.
 
-\item Contributing to related open source software development projects including:
-\begin{itemize}
-    \renewcommand{\labelitemii}{$\cdot$}
-    \item OERPub Editor:~\url{http://oerpub.github.io/Aloha-Editor}
-    \item AnnotatorJS:~\url{http://annotatorjs.org}
-\end{itemize}
+% \item Contributing to related open source software development projects including:
+% \begin{itemize}
+%     \renewcommand{\labelitemii}{$\cdot$}
+%     \item OERPub Editor:~\url{http://oerpub.github.io/Aloha-Editor}
+%     \item AnnotatorJS:~\url{http://annotatorjs.org}
+% \end{itemize}
 \end{itemize}
 }
-\end{entrylist}
-\newgeometry{left=2.5cm, right=2.5cm}
-\renewcommand{\entry}[4]{%
-  #1&\parbox[t]{13.5cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{3\parsep}%
-  }\\}
-\begin{entrylist}
 %
+\end{entrylist}
+\begin{entrylist}
 \entry
 {2008}
 {\href{http://www.uct.ac.za}{University of Cape Town}}
@@ -236,7 +250,7 @@ Mathematics, Physics, Astronomy, Numerical Methods, Land Law, Engineering Survey
 %----------------------------------------------------------------------------------------
 %	SKILLS EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
+\pagebreak
 \section{skills}
 
 \textbf{Programming languages:} Python, Javascript, Fortran, C/C++, \LaTeX.
@@ -254,9 +268,9 @@ Mathematics, Physics, Astronomy, Numerical Methods, Land Law, Engineering Survey
 \textbf{Miscellaneous:} exceptional analytical and problem solving skills, technical software programming and design capabilities, object-oriented programming, strong verbal and written communication skills.
 
 
-\section{publications}
-\printbibsection{article}{articles} % Print all articles from the bibliography
-\printbibsection{inproceedings}{conference proceedings} % Print all articles from the bibliography
+% \section{publications}
+% \printbibsection{article}{articles} % Print all articles from the bibliography
+% \printbibsection{inproceedings}{conference proceedings} % Print all articles from the bibliography
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
@@ -268,7 +282,7 @@ Mathematics, Physics, Astronomy, Numerical Methods, Land Law, Engineering Survey
 
 \textbf{Academic:} Astrophysics of variable stars, astronomical observing and data reduction and analysis techniques, open-source educational software, programming literacy.
 
-\textbf{Personal:} Guitars, DIY effects pedals and valve amplifiers, dragonboat racing, trail running, gaming.
+\textbf{Personal:} Guitars, DIY effects pedals and valve amplifiers, gaming.
 
 
 %----------------------------------------------------------------------------------------
